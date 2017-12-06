@@ -41,6 +41,6 @@ function delet(obj){
     obj.desc.value=' ';
 }
 function areaCircle(obj) {
-    var a=obj.c1.value;
-    document.res2.value=3.14*a*a;
+    var с=obj.c1.value;
+    obj.res2.value=3.14*с*с;
 }
