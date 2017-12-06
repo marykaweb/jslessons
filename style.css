@@ -1,0 +1,30 @@
+#kv1, #kv2, #kv3{
+    width:80px;
+    height:100px;
+    background:red;
+    margin:5px;
+    color:white;
+    display:none;
+    float: left;
+}
+
+#st1, #st2, #st3{
+    float:left;
+    background:yellow;
+    margin:5px;
+    padding:5px;
+}
+#red, #green, #blue{
+    width:100px;
+    height:100px;
+    margin:10px;
+}
+#red{
+    background:red;
+}
+#green{
+    background:green;
+}
+#blue{
+    background:blue;
+}

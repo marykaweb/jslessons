@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <meta charset="utf-8">
+</head>
+<body>
+<div>
+    <h2>Эффекты jQuery</h2>
+    <div id="kv1" >1</div>
+    <div id="kv2" >2</div>
+    <div id="kv3" >3</div>
+    <button  onclick="addEffect1()">Эффект Show()</button>
+    <button  onclick="addEffect2()">Эффект SlideDown()</button>
+    <button  onclick="addEffect3()">Эффект Animate()</button>
+</div>
+<div style="clear: both"></div>
+<div>
+    <h2>Эффекты jQuery 2</h2>
+    <div id="st1" ><p>Текст первого абзаца</p></div>
+    <div id="st2" ><p class="withBorder">Текст второго абзаца</p></div>
+    <div id="st3" ><p>Текст третьего абзаца</p></div>
+    <div style="clear: both"></div>
+    <button  onclick="addStyle1()">Сделать первый div красным</button><br><br>
+    <button  onclick="addStyle2()">Обвести средний абзац синей рамкой</button><br><br>
+    <button  onclick="addStyle3()">Сделать шрифт в первом и третьем div-ах жирным</button>
+</div>
+<hr>
+<h2>Эффекты jQuery 3</h2>
+<div onClick="showMessage();">Щелкни меня</div>
+<hr>
+<h2>Эффекты jQuery 4</h2>
+<form name="forma1">
+    Введите длину прямоугольника <input type="text" name="t1" size="10"><br><br>
+    Введите ширину прямоугольника <input type="text" name="t2" size="10"><br><br>
+    <input type="button" name="button" value="Вычислить" onClick="areaRectangle(forma1);"><br><br>
+    Площадь прямоугольника равна <input type="text" name="res" size="10">
+</form>
+<hr>
+<h2>Эффекты jQuery 5</h2>
+<table><tr>
+    <td><div id="red" onClick="message('Вы щелкнули по красному квадратику');"></div></td>
+    <td><div id="green" onClick="message('Вы щелкнули по зеленому квадратику');"></div></td>
+    <td><div id="blue" onClick="message('Вы щелкнули по синему квадратику');"></div></td>
+</tr></table>
+<hr>
+<h2>Эффекты jQuery 6</h2>
+<form name="forma2">
+    <textarea name="desc" cols=45 rows=4></textarea>
+</form>
+<ul>
+    <li onMouseOver="showDesc(forma2,'Малина обыкновенная — кустарник с многолетним корневищем,'+
+            ' из которого развиваются двухгодичные надземные стебли высотой до полутора метров.');"
+        onMouseOut="delet(forma2);">Малина</li>
+
+    <li onMouseOver="showDesc(forma2,'Черника — кустарничек высотой 15—30 см. Ветви отходят'+
+            ' от главного стволика под острыми углами.');"
+        onMouseOut="delet(forma2);">Черника</li>
+
+    <li onMouseOver="showDesc(forma2,'Ежевика — название нескольких видов растений из рода Rubus'+
+            ' семейства Розовые.');"
+        onMouseOut="delet(forma2);">Ежевика</li>
+</ul>
+<a href="page2.html">страница 2</a>
+</body>
+</html>
