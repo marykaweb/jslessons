@@ -28,3 +28,20 @@
 #blue{
     background:blue;
 }
+
+.month tr td {
+    clear:both;
+    text-align:right;
+}
+
+.month tr td label {
+    padding-right: 10px;
+}
+
+.effect9 img {
+    width: 102px;
+}
+
+.effect9 {
+    width: 302px;
+}

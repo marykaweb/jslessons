@@ -3,8 +3,6 @@
 <head>
     <title>jQuery</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
     <meta charset="utf-8">
 </head>
 <body>
@@ -16,51 +14,60 @@
 </form>
 <hr>
 <h2>Эффекты jQuery 8</h2>
-<form method="post" id="myform"></form>
-<table>
+<form method="post" id="myform" name="forma8">
+<table class="month">
     <tr>
         <td>
-            t января <input type="text" name="m1" form="myform">
+            <label for="jan">t января</label><input type="text" name="m1" id="jan">
         </td>
         <td>
-            t февраля<input type="text" name="m2" form="myform">
+            <label for="feb">t февраля</label><input type="text" name="m2" id="feb">
         </td>
         <td>
-            t марта <input type="text" name="m3" form="myform">
+            <label>t марта</label><input type="text" name="m3" >
         </td>
         <td>
-           t апреля  <input type="text" name="m4" form="myform">
+            <label>t апреля</label><input type="text" name="m4" >
         </td>
     </tr>
     <tr>
         <td>
-            t мая<input type="text" name="m5" form="myform">
+            <label>t мая</label><input type="text" name="m5">
+        <td>
+            <label>t июня</label><input type="text" name="m6">
         </td>
         <td>
-            t июня <input type="text" name="m6" form="myform">
+            <label>t июля</label><input type="text" name="m7">
         </td>
         <td>
-            t июля <input type="text" name="m7" form="myform">
-        </td>
-        <td>
-            t августа <input type="text" name="m8" form="myform">
+            <label>t августа</label><input type="text" name="m8">
         </td>
     </tr>
     <tr>
         <td>
-            t сентября <input type="text" name="m9" form="myform">
+            <label>t сентября</label><input type="text" name="m9">
         </td>
         <td>
-            t октября <input type="text" name="m10" form="myform">
+            <label>t октября</label><input type="text" name="m10">
         </td>
         <td>
-            t ноября <input type="text" name="m11" form="myform">
+            <label>t ноября</label><input type="text" name="m11">
         </td>
         <td>
-            t декабря <input type="text" name="m12" form="myform">
+            <label>t декабря</label><input type="text" name="m12">
         </td>
     </tr>
 </table>
+<input type="button" name="button" value="Просчитать" onClick="averageValue(forma8);">
+    <input type="text" name="res8">
+    <input type="reset" value="Отменить">
+</form>
+<hr>
+<h2>Эффекты jQuery 9</h2>
+<div class="effect9"><img src="img/tigrenok.jpg" alt="" name="tigrenok" onClick="bigPic();"></div>
 <!--<a href="page3.html">страница 2</a>-->
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
