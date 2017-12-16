@@ -62,11 +62,32 @@ function averageValue(obj) {
     obj.res8.value=(v1+v2+v3+v4+v5+v6+v7+v8+v9+v10+v11+v12)/12;
 }
 
-function bigPic(){
-    var w=document.tigrenok.width;
+function bigPict(){
+    var w=document.tigr.width;
     if (w<302){
-        document.tigrenok.width=w+10;
-        document.tigrenok.src="img/tigrenok.jpg";
-        setTimeout("bigPic()", 500);
+        document.tigr.width=w+10;
+        document.tigr.src="img/tigrenok.jpg";
+        setTimeout("bigPict()", 500)
     }
+}
+
+function nToMonth(obj) {
+    var number=obj.zn.value;
+    var m;
+    switch(number) {
+        case '1': m="Январь"; break;
+        case '2': m="Февраль"; break;
+        case '3': m="Март"; break;
+        case '4': m="Апрель"; break;
+        case '5': m="Май"; break;
+        case '6': m="Июнь"; break;
+        case '7': m="Июль"; break;
+        case '8': m="Август"; break;
+        case '9': m="Сентябрь"; break;
+        case '10': m="Октябрь"; break;
+        case '11': m="Ноябрь"; break;
+        case '12': m="Декабрь"; break;
+        default: m="Проверьте правильность ввода"; break;
+    }
+    obj.res10.value=m;
 }
